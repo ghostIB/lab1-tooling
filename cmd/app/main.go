@@ -3,7 +3,7 @@ package main
 import (
 	"fmt"
 
-	"github.com/GhostIB/lab1-tooling/internal"
+	"github.com/ghostIB/lab1-tooling/internal"
 )
 
 func main() {
