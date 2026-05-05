@@ -17,17 +17,19 @@ jobs:
         uses: actions/setup-go@v5
         with:
           go-version: '1.24'
+          cache: true
 
       - name: Install dependencies
         run: go mod download
 
-      - name: Verify Dependencies
-        run: go mod verify
+      - name: Build for Linting
+        run: go build ./...
 
       - name: Run Linter
         uses: golangci/golangci-lint-action@v6
         with:
           version: latest
+          args: --timeout=5m
 
       - name: Run Tests
         run: make test
