@@ -1,5 +1,4 @@
 ![CI Status](https://github.com/ghostIB/lab1-tooling/actions/workflows/ci.yml/badge.svg)
-Markdown
 # Лабораторна робота №1: Налаштування професійного інструментарію розробки на Go
 
 ## Виконав
